@@ -1,0 +1,133 @@
+body{
+    font-family:'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+header{
+    background-color:rgb(135, 251, 127);
+    padding: auto;
+}
+
+header h1 {
+    color:rgb(247, 5, 5);
+    font-family: "Nosifer", sans-serif;
+    font-weight: 800;
+    font-style: oblique;
+    font-size: 40px;
+    display: inline-block;
+    position: relative;
+    bottom: 35px;
+    margin-left: 10px;
+}
+
+nav{
+    background-color: rgb(220, 183, 254);
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0px;
+    padding: 10px;
+    display: flex;
+}
+
+nav ul li{
+    flex-grow: 1;
+}
+
+nav ul li a:hover{
+    background-color: rgba(red, green, blue, alpha);
+}
+
+footer{
+    background-color:#ccc;
+    clear: both;
+    color:#333;
+    text-align: center;
+    padding: 5px 0;
+    margin-top: 20px;
+}
+
+nav ul li a.activo{
+    background-color: #4c76a5;
+}
+
+.holder{
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+main h2{
+    color:red;
+    font-family: "Nosifer", sans-serif;
+    padding: auto;
+}
+
+main .bienvenidos{
+     background-color: #bbcfe5;
+     padding: auto;
+}
+
+.bienvenidos{
+    width: 75%;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+
+.testimonios{
+    width: 25%;
+}
+
+.columnas{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bienvenidos p{
+    font-size: 20px;
+}
+
+.testimonio{
+    background-color: rgb(203, 199, 199);
+    padding: 16px;
+}
+
+.testimonio .cita{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 22px;
+    display: block;
+}
+
+.testimonio .autor{
+    font-size: 10px;
+    text-align: center;
+    display: block;
+    margin: 12px 0;
+}
+
+h3{
+    font-family:'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    background-color:rgb(135, 251, 127);
+    padding: auto;
+}
+
+h4{
+    color:red;
+    font-family: "Nosifer", sans-serif;
+    font-size: 30px;
+    line-height: 20px;
+    padding: auto;
+}
+
+h5{
+    color:red;
+    font-family: "Nosifer", sans-serif;
+    font-size: 25px;
+    line-height: 20px;
+    padding: auto;
+}
