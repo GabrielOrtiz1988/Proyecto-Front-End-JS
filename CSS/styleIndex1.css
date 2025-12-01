@@ -1,0 +1,414 @@
+* {
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size:62.5%
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    background: repeating-conic-gradient(
+        from 0deg,
+        rgb(3, 207, 238) 0 20deg,
+        rgb(116, 114, 114) 20deg 40deg);
+    display: flex;
+    flex-direction:column;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.holder {
+    /* Contenedor principal para centrar el contenido */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/*
+====================================
+        HEADER Y NAVEGACIÓN
+====================================
+*/
+.header {
+    background: repeating-linear-gradient(
+    45deg,
+    #dcf773 0 10px,
+    rgb(243, 198, 132) 10px 20px );
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Permite que los elementos bajen en móviles */
+    gap: 10px;
+}
+
+.header__logo a {
+  font-family: "Rubik Puddles", system-ui;
+  font-weight: 900;
+  font-style: normal;
+  padding: 1rem;
+  margin-left: 2rem;
+  font-size: 7rem;
+  font-weight: bold;
+}
+
+.header__logo a:hover {
+  background-image: linear-gradient(to right,black, orange, green, red, blue, violet);
+ -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;  
+}
+
+.header img {
+    width: 180px;
+    height: 180px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+.header__nav {
+  padding: 2rem;
+  margin-right: 2rem;
+}
+
+.header__nav ul {
+    list-style: none;
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+}
+
+.header__nav a {
+    font-family: "Rubik Puddles", system-ui;
+    font-size: 2.5rem; 
+    font-weight: 950;
+    line-height: 1.2; 
+    font-style: normal;
+
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.header__nav a:hover {
+    background-image: linear-gradient(to right, black, orange, green, red, blue, violet);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; 
+}
+
+/*
+====================================
+        CARRITO
+====================================
+*/
+.titulo-carrito {
+    font-size: 5.5rem;
+    text-align: center;
+    margin: 30px 0 20px 0;
+    font-family: "Bungee Spice", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.acciones-carrito {
+    width: 100%;
+    margin: 3rem auto;
+    padding: 1rem;
+    text-align: center;
+}
+                                
+.contenedor-carrito {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+/* Estilo para los botones (Vaciar Carrito, Eliminar, etc.) */
+.btn {
+    background-color: #D32F2F;
+    color: #FFC107; 
+    
+    border: none;
+    padding: 1.2rem 2rem;
+    font-size: 1.8rem;
+    font-weight: 900;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    /* Agregamos una sombra para darle profundidad (como un botón que se puede presionar) */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    /* Transición para el efecto hover */
+    transition: background-color 0.2s ease, transform 0.1s;
+}
+
+/* Efecto al pasar el mouse*/
+.btn:hover {
+    background-color: #660707;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.btn-vaciar-carrito {
+    background-color: #FF9800;
+    color: #480d02;
+}
+
+.btn-vaciar-carrito:hover {
+    background-color: #be0202; 
+}
+
+/*
+====================================
+            MAIN
+====================================
+*/
+.holder > img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.titulo-home {
+    
+  font-family: "Honk", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "MORF" 15,
+    "SHLN" 50;
+  text-align: center;
+  margin-bottom: 30px 0 20px 0;
+  font-size: 6.5rem;
+}
+
+.parrafo-home {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 3.5rem;
+    font-family: "Grenze Gotisch", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+/*
+====================================
+        PRODUCTOS Y MENÚ
+====================================
+*/
+.titulo-menu {
+    font-size: 5.5rem;
+    text-align: center;
+    margin: 30px 0 20px 0;
+    font-family: "Bungee Spice", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.contenedor-tarjetas {
+    /* Contenedor Flex para las tarjetas */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.tarjeta-producto {
+    /* Estilo base de la tarjeta */
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 100%;
+    max-width: 300px; /* Ancho máximo para el diseño de escritorio */
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tarjeta-producto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.tarjeta-producto img {
+    /* Imagen del producto */
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.tarjeta-producto h3 {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.tarjeta-producto p {
+    font-size: 1.2rem;
+    color: #d32f2f;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+/*
+====================================
+            FOOTER
+====================================
+*/
+.footer {
+  background-color: rgb(15, 52, 15);
+
+  padding: 2rem;
+  color: #f7bb2b;
+
+  /* hago flexibles al p y la nav */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer nav ul {
+  list-style: none;
+
+  /* hago flexibles a los li de la lista */
+  display: flex;
+  justify-content: center;
+  gap: 2rem; /* 20px */
+}
+
+
+/*
+====================================
+            CONTACTO
+====================================
+*/
+.seccion-contacto {
+    width: 100%;
+    margin: 4rem auto;
+    padding: 2rem 0;
+}
+
+.titulo-contacto {
+    font-size: 5rem;
+    text-align: center;
+    margin: 2rem 0 4rem 0;
+    font-family: "Bungee Spice", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.form {
+    background-color: #1c2e4a; 
+    padding: 6rem;
+    border-radius: 1.5rem; 
+    width: 90%; 
+    max-width: 700px; 
+    margin: 3rem auto; 
+    
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.campo-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.campo-form label {
+    font-size: 1.8rem;
+    color: #e3f2fd; 
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.campo-form input,
+.campo-form textarea {
+    padding: 1.5rem 1rem;
+    font-size: 1.8rem;
+    border-radius: 0.8rem;
+    border: 2px solid transparent; 
+    background-color: #2b4065;
+    color: #ffffff;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form button {
+    background-color: #8BC34A; 
+    color: #1c2e4a;
+    border: none;
+    padding: 1.5rem;
+    font-size: 2.2rem; 
+    font-weight: 900;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    
+    /* Sombra para que parezca elevado */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); 
+    transition: background-color 0.3s ease, transform 0.1s ease, box-shadow 0.3s;
+}
+
+/*
+====================================
+  6. Media Queries (Responsividad)
+====================================
+*/
+
+/* Estilos para pantallas pequeñas (Móviles) */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column; /* Apila los elementos en el header */
+        text-align: center;
+    }
+
+    .header__nav {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .header__nav ul {
+        justify-content: space-around; /* Distribuye los enlaces uniformemente */
+        gap: 0;
+    }
+
+    .header__logo {
+        margin-bottom: 5px;
+    }
+    
+    .titulo-home {
+        font-size: 2rem;
+    }
+
+    .titulo-menu {
+        font-size: 1.6rem;
+    }
+    
+    .card {
+        max-width: 90%; /* Hace que las tarjetas ocupen casi todo el ancho */
+    }
+
+    footer {
+        flex-direction: column;
+    }
+    
+    footer nav ul {
+        margin-top: 10px;
+    }
+}

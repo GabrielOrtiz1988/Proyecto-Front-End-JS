@@ -1,94 +1,114 @@
 <!DOCTYPE html>
-<html lang="es.ar">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina Web</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap">
-    <link rel="stylesheet" href="CSS/styleIndex.css">
-    <link rel="formulario" href="Form/formulario.html">
+    <link rel="stylesheet" href="CSS/styleIndex1.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Grenze+Gotisch:wght@100..900&family=Honk&family=Rubik+Puddles&display=swap" rel="stylesheet">
+
+    <title>Family Burger - Home</title>
 </head>
 
 <body>
-    <header>
-        <div class="holder">
-        <img src="Img/Gemini_Generated_Image_hsbu98hsbu98hsbu.png" width="200" alt="Family Burger">
-        <h1>Family Burger</h1>
-        </div>
-    </header>
-        <nav>
-            <div class="holder">
+    <header class="header">
+        <p class="header__logo">
+            <a href="index.html">Family Burger</a>
+        </p>
+        <img src="img/Gemini_Generated_Image_hsbu98hsbu98hsbu.png" alt="Family Burger">
+        <nav class="header__nav">
             <ul>
-                <li><a class="activo" href="index.html">Home</a></li>
-                <li><a href="nosotros.html">Acerca de  Nosotros</a></li>
-                <li><a href="galeria.html">Nuestros Productos</a> </li>
-                <li><a href="Form/formulario.html">Contacto</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="./Pages/formulario.html">Contacto</a></li>
+                <li>
+                    <a href="./Pages/carrito.html" class="carrito-icono">
+                        <i class="fa-regular fa-cart-shopping"></i>
+                        🛒<span id="contador-carrito" class="contador-carrito">0</span>
+                    </a>
+                </li>
             </ul>
-            </div>
         </nav>
+    </header> 
+    <main class="holder">
+        <img src="img/Gemini_Generated_Image_j29wmej29wmej29w.png" alt="local">
+        <h1 class="titulo-home">Bienvenidos a FAMILY BURGER</h1>
+        <p class="parrafo-home">
+                Somos una hamburgueseria familiar, creada en 2020 en plena pandemia,
+                donde nos pusimos a cocinar y brindar una experiencia gastronimica unica
+                para la gente.
+        </p>
 
-        <main class="holder">
-            <div>
-                <img src="Img/Gemini_Generated_Image_j29wmej29wmej29w.png" width="400" alt="local">
-            </div>
-            <div class="columnas">
-                <section class="bienvenidos">
-                    <h2>Bienvenidos</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                        Numquam aspernatur modi ex porro distinctio facere, 
-                        corrupti dolore repudiandae illo dolorum. 
-                        Numquam tempora similique omnis autem illo, 
-                        error ipsam saepe velit?</p>
-                </section>
-                <section class="testimonios">
-                    <h3>Comentarios de Clientes</h3>
-                    <div class="testimonio">
-                        <span class="cita">Simplemente Excelente</span>
-                        <span class="autor">Juan Gomez - facebook</span>
-                    </div>
-                </section>
-            </div>
+        <section class="productos-home">
+            <h2 class="titulo-menu">Nuestro Menú</h2>
+                
+            <div id="contenedor-tarjetas" class="contenedor-tarjetas"> 
+            <!-- <article class="tarjeta-producto">
+                    <img src="img/Gemini_Generated_Image_65jlkn65jlkn65jl.png" width="400" alt=""/>
+                    <h3>Hamburguesa Completa</h3>
+                    <p>Precio: $3500</p>
+                    <button class="btn">Agregar al carrito</button>
+                </article>
 
-        </main>
-</head>
-<body>
-    
-     <main class="holder">
-        <h4>Nuestros Productos</h4>
-            <div class="galeria"> 
-                <img src="Img/Gemini_Generated_Image_var8yrvar8yrvar8.png" width="400" alt="común">
-            </div>
-            <div class="info">
-                    <h5>Hamburguesa Común</h5>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                        Numquam aspernatur modi ex porro distinctio facere, 
-                        corrupti dolore repudiandae illo dolorum. 
-                        Numquam tempora similique omnis autem illo, 
-                        error ipsam saepe velit?</p>
-                    </div>
-            <div class="galeria"> 
-                <img src="Img/Gemini_Generated_Image_65jlkn65jlkn65jl.png" width="400" alt="completa">
-            </div>
-            <div class="info">
-                    <h5>Hamburguesa Completa</h5>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                        Numquam aspernatur modi ex porro distinctio facere, 
-                        corrupti dolore repudiandae illo dolorum. 
-                        Numquam tempora similique omnis autem illo, 
-                        error ipsam saepe velit?</p>
-                    </div>
-            </div>
-        </main>
+                <article class="tarjeta-producto">
+                    <img src="img/Gemini_Generated_Image_var8yrvar8yrvar8.png" width="400" alt=""/>
+                    <h3>Hamburguesa Común</h3>
+                    <p>Precio: $3000</p>
+                    <button class="btn">Agregar al carrito</button>
+                </article>
 
-</body>
-        <footer>
-            <p>Diseñado por Gabiel Ortiz -&copy;2025</p>
-        </footer>
+                <article class="tarjeta-producto">
+                    <img src="img/Como-hacer-papas-fritas-crujientes-000.webp" width="400" alt=""/>
+                    <h3>Papas Fritas</h3>
+                    <p>Precio: $1500</p>
+                    <button class="btn">Agregar al carrito</button>
+                </article>
 
-    </header>
+                <article class="tarjeta-producto">
+                    <img src="img/Bastones-de-muzzarella.webp" width="400" alt=""/>
+                    <h3>Bastón de Muzza</h3>
+                    <p>Precio: $1500</p>
+                    <button class="btn">Agregar al carrito</button>
+                </article> -->
+                </div>
+            </section>
+
+
+                <!--<article class="tarjeta-producto">
+                    <img src="img/ccso_1l-d218103464b672d28617127795589052-640-0.webp" width="400" alt=""/>
+                    <h3>Coca Cola 1 litro</h3>
+                    <p>Precio: $1000</p>
+                    <button class="btn">Agregar al carrito</button>
+                </article>
+
+                <article class="tarjeta-producto">
+                    <img src="img/11605-0e7667847e7389323417127803620783-640-0.jpg" width="400" alt=""/>
+                    <h3>Sprite 1 litro</h3>
+                    <p>Precio: $1000</p>
+                    <button class="btn">Agregar al carrito</button>
+                </article>
+
+                <article class="tarjeta-producto">
+                    <img src="img/394d839074800908bed84a326e1e1b991c83fdb0abb84fc617519677a936b9e4314512.jpg" width="400" alt=""/>
+                    <h3>Fanta 1 litro</h3>
+                    <p>Precio: $1000</p>
+                    <button class="btn">Agregar al carrito</button>
+                </article> -->
+
+    </main>
+
+    <footer class="footer">
+        <p>Diseñado por Gabiel Ortiz -&copy;2025 Mi E-Commerce</p>
+        <nav>
+            <ul>
+                <li>Facebock</li>
+                <li>Whatsapp</li>
+            </ul>
+        </nav>
+    </footer>
+    <!--Enlazo el js antes del cierre del body-->
+    <script type="module" src="js/index.js"></script>
 </body>
 </html>

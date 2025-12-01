@@ -1,0 +1,50 @@
+ [
+ {"id": 1,
+     "nombre": "Hamburguesa Completa",
+     "descripcion":" ",
+     "precio": 3500,
+     "imagen": "./img/Gemini_Generated_Image_65jlkn65jlkn65jl.png"
+    },
+    {
+        "id": 2,
+        "nombre": "Hamburguesa Común",
+        "descripcion":" ",
+        "precio": 3000,
+        "imagen": "./img/Gemini_Generated_Image_var8yrvar8yrvar8.png"
+    },
+    {
+        "id": 3,
+        "nombre": "Papas Fritas",
+        "descripcion":" ",
+        "precio": 1500,
+        "imagen": "./img/Como-hacer-papas-fritas-crujientes-000.webp"
+    },
+    {
+        "id": 4,
+        "nombre": "Bastón de Muzza",
+        "descripcion":" ",
+        "precio": 1500,
+        "imagen": "./img/Bastones-de-muzzarella.webp"
+    },
+    {
+        "id": 5,
+        "nombre": "Coca Cola 1 litro",
+        "descripcion":" ",
+        "precio": 1000,
+        "imagen": "./img/ccso_1l-d218103464b672d28617127795589052-640-0.webp"
+    },
+    {
+        "id": 6,
+        "nombre": "Sprite 1 litro",
+        "descripcion":" ",
+        "precio": 1000,
+        "imagen": "./img/11605-0e7667847e7389323417127803620783-640-0.jpg"
+    },
+    {
+        "id": 7,
+        "nombre": "Fanta 1 litro",
+        "descripcion":" ",
+        "precio": 1000,
+        "imagen": "./img/394d839074800908bed84a326e1e1b991c83fdb0abb84fc617519677a936b9e4314512.jpg"
+    }
+]

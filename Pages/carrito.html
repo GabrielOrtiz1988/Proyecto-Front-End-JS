@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../CSS/styleIndex1.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Grenze+Gotisch:wght@100..900&family=Honk&family=Rubik+Puddles&display=swap" rel="stylesheet">
+
+
+    <title>Carrito</title>
+
+</head>
+<body>
+    <header class="header">
+        <p class="header__logo">
+            <a href="../index.html">Family Burger</a>
+        </p>
+        <img src="../img/Gemini_Generated_Image_hsbu98hsbu98hsbu.png" alt="Family Burger">
+        <nav class="header__nav">
+            <ul>
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+                <li>
+                    <a href="../Pages/formulario.html">Contacto</a>
+                </li>
+                <li>
+                    <a href="./Pages/carrito.html" class="carrito-icono">
+                       
+                       🛒 <span id="contador-carrito" class="contador-carrito">0</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="titulo-carrito">Carrito de compras</h1>
+        <section id="contenedor-carrito" class="contenedor-carrito">
+            <!--Productos del carrito-->
+        </section>
+        <div class="acciones-carrito" id="acciones-carrito">
+            <!--Botones de eliminar y finalizar compra se agregan desde JS-->
+        </div>
+        <!-- <section id="resumen-carrito">
+            Aca ira el resumen del carrito
+        </section> -->
+    </main>
+    <footer class="footer">
+        <p>Diseñado por Gabiel Ortiz -&copy;2025 Mi E-Commerce</p>
+        <nav>
+            <ul>
+                <li>Facebock</li>
+                <li>Whatsapp</li>
+            </ul>
+        </nav>
+    </footer>
+    <!--Enlazo el js antes del cierre del body-->
+    <script type="module" src="../js/carrito.js"></script>
+</body>
+</html>
