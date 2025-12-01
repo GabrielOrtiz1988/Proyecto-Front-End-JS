@@ -3,7 +3,7 @@
      "nombre": "Hamburguesa Completa",
      "descripcion":" ",
      "precio": 3500,
-     "imagen": "./Img/Gemini_Generated_Image_65jlkn65jlkn65jl.png"
+     "imagen": "./Img/Gemini_Generated_Image_var8yrvar8yrvar8.png"
     },
     {
         "id": 2,
@@ -38,7 +38,7 @@
         "nombre": "Sprite 1 litro",
         "descripcion":" ",
         "precio": 1000,
-        "imagen": "./Img/11605-0e7667847e7389323417127803620783-640-0.jpg"
+        "imagen": "I/11605-0e7667847e7389323417127803620783-640-0.jpg"
     },
     {
         "id": 7,
